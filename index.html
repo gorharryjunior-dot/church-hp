@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grace Community Church</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <span class="badge">Welcome Home</span>
+      <h1>✝️ Grace Community Church</h1>
+      <p>A place of faith, hope, love, and community.</p>
+      <a href="#services" class="btn-primary">Plan Your Visit</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Countdown to Next Sunday Service -->
+    <section class="card countdown-section">
+      <h2>Next Sunday Service Begins In</h2>
+      <div class="countdown" id="countdown">
+        <div class="time-box"><span id="days">00</span><small>Days</small></div>
+        <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+        <div class="time-box"><span id="minutes">00</span><small>Mins</small></div>
+        <div class="time-box"><span id="seconds">00</span><small>Secs</small></div>
+      </div>
+    </section>
+
+    <!-- Service Times & Location -->
+    <section id="services" class="card grid-two">
+      <div>
+        <h2>⛪ Service Times</h2>
+        <ul class="info-list">
+          <li><strong>First Service:</strong> Sundays at 8:30 AM</li>
+          <li><strong>Main Worship:</strong> Sundays at 10:30 AM</li>
+          <li><strong>Midweek Bible Study:</strong> Wednesdays at 6:30 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h2>📍 Location & Contact</h2>
+        <p class="location-text">450 Hope Avenue, Peaceful Valley</p>
+        <p class="location-text">Children's ministry & free parking available.</p>
+      </div>
+    </section>
+
+    <!-- Daily Scripture Generator -->
+    <section class="card scripture-box">
+      <h2>📖 Verse of Encouragement</h2>
+      <blockquote id="verse-text">
+        "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future."
+      </blockquote>
+      <p id="verse-ref" class="verse-ref">— Jeremiah 29:11</p>
+      <button id="new-verse-btn" class="btn-secondary">Read Another Verse</button>
+    </section>
+
+    <!-- Interactive Prayer Request Form -->
+    <section class="card">
+      <h2>🙏 Submit a Prayer Request</h2>
+      <p class="subtext">Our prayer team prays over every request submitted.</p>
+      <form id="prayer-form">
+        <input type="text" id="sender-name" placeholder="Your Name (Optional)">
+        <textarea id="prayer-text" rows="4" placeholder="How can we pray for you today?" required></textarea>
+        <button type="submit" class="btn-primary">Send Prayer Request</button>
+      </form>
+      <p id="prayer-confirmation" class="hidden"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Grace Community Church. All are welcome.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

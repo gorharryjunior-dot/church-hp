@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Hero Banner */
+.hero {
+  background: linear-gradient(rgba(26, 42, 68, 0.85), rgba(26, 42, 68, 0.85)),
+              radial-gradient(circle at top, #3b5998, #1a2a44);
+  color: #ffffff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.badge {
+  background: #d4af37;
+  color: #1a2a44;
+  padding: 5px 14px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin: 15px 0 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #e0e6ed;
+  margin-bottom: 25px;
+}
+
+/* Layout & Cards */
+.container {
+  max-width: 850px;
+  margin: -30px auto 40px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  color: #1a2a44;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+/* Countdown */
+.countdown-section {
+  text-align: center;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.time-box {
+  background: #1a2a44;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 75px;
+}
+
+.time-box span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+.time-box small {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #cbd5e1;
+}
+
+/* Two Column Grid */
+.grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.info-list {
+  list-style: none;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+  padding-left: 12px;
+  border-left: 3px solid #d4af37;
+}
+
+.location-text {
+  margin-bottom: 10px;
+  color: #4a5568;
+}
+
+/* Scripture Box */
+.scripture-box {
+  text-align: center;
+  background: #fdfbf7;
+  border-top: 4px solid #d4af37;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #1a2a44;
+  margin: 15px 0 10px;
+}
+
+.verse-ref {
+  font-weight: bold;
+  color: #8c6d1f;
+  margin-bottom: 20px;
+}
+
+/* Buttons & Forms */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: opacity 0.2s ease;
+}
+
+.btn-primary {
+  background: #d4af37;
+  color: #1a2a44;
+}
+
+.btn-secondary {
+  background: #1a2a44;
+  color: #ffffff;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  opacity: 0.9;
+}
+
+.subtext {
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#prayer-confirmation {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #1e7e34;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 650px) {
+  .grid-two {
+    grid-template-columns: 1fr;
+  }
+  .countdown {
+    gap: 8px;
+  }
+  .time-box {
+    min-width: 65px;
+    padding: 10px;
+  }
+}
